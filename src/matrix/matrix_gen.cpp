@@ -1,18 +1,18 @@
 #include "matrix/matrix_gen.h"
-#include <cstdlib> // for rand()
-#include <ctime>   // for time()
+#include <cstdlib> 
+#include <ctime>
 #include <vector>
-#include <cstdlib>  // For std::rand() and std::srand()
-#include <ctime>    // For std::time()
-#include <random>   // For random engine and shuffle
-#include <algorithm> // For std::shuffle
+#include <cstdlib>
+#include <ctime>
+#include <random>
+#include <algorithm>
 
-// Initialize random seed (you can call this once in your main program)
+// Initialize random seed (call this once in main program)
 void initialize_random_seed() {
     std::srand(std::time(0));
 }
 
-// Function to generate a dense matrix of given size (rows x cols) with random integers
+// Function to generate a dense matrix of given size (rows x cols) with random numbers
 std::vector<std::vector<int>> generate_dense_matrix(int rows, int cols) {
     std::vector<std::vector<int>> matrix(rows, std::vector<int>(cols));
     for (int i = 0; i < rows; ++i) {
