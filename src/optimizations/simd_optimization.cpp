@@ -1,7 +1,7 @@
 #include "optimizations/simd_optimization.h"
 #include <immintrin.h>
 #include <algorithm>
-#include <omp.h>         // Optional: OpenMP for parallelization
+#include <omp.h>         
 
 // Standard matrix multiplication
 void multiply_standard(
