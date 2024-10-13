@@ -143,7 +143,7 @@ Some Observations:
    - For **dense-dense multiplication**, the combination of multi-threading and SIMD provides the most benefit.
 
 4. **Combining Optimizations**:
-   - The **Optimization Comparison for 1000x1000 Dense-Dense Matrices** chart highlights that while individual techniques provide some improvements, the **"All" configuration** (multi-threading, SIMD, and cache optimization) delivers the fastest execution.  
+   - The **Optimization Comparison for 1000x1000 Dense-Dense Matrices** highlights that while individual techniques provide some improvements, the **"All" configuration** (multi-threading, SIMD, and cache optimization) delivers the fastest execution.  
    - This trend holds across all matrix types and sparsity levels, confirming that combining multiple optimizations yields the best results.
 
 ## Dense-Dense Matrix Multiplication
@@ -178,7 +178,7 @@ Dense-sparse matrix multiplication involves multiplying a matrix with mostly non
 - **All Optimizations Combined**: The combination of multi-threading, SIMD, and cache optimization delivers significant improvements. This approach maximizes performance by leveraging computational power while efficiently managing memory access patterns.
 ## Final Analysis and Conclusions
 
-The presented graphs provide a comprehensive evaluation of matrix multiplication performance under different optimization strategies, matrix sizes, and sparsity levels. Below is a detailed analysis and key takeaways based on the graphs:
+The graphs generated from the python script provide a comprehensive evaluation of matrix multiplication performance under different optimization strategies, matrix sizes, and sparsity levels. Below is a detailed analysis and key takeaways based on the graphs:
 
 ---
 
