@@ -181,7 +181,20 @@ The presented graphs provide a comprehensive evaluation of matrix multiplication
 
 ---
 ### Final Conclusion and Analysis
+<p align="center">
+  <img src="images/image.png" alt="CacheVsMainMemory graph" />
+</p>
+<p align="center">
+  <img src="images/image_2024_10_13T11_45_25_072Z.png" alt="CacheVsMainMemory Graph 1" />
+</p>
 
+<p align="center">
+  <img src="images/image_2024_10_13T11_45_46_232Z.png" alt="CacheVsMainMemory Graph 2" />
+</p>
+
+<p align="center">
+  <img src="images/image_2024_10_13T11_46_06_854Z.png" alt="CacheVsMainMemory Graph 3" />
+</p>
 The presented graphs provide a comprehensive evaluation of matrix multiplication performance under different optimization strategies, matrix sizes, and sparsity levels. Below is a detailed analysis and key takeaways based on the graphs:
 
 ## 2. Optimization Comparison for 1000x1000 Matrix (Bar Plot)
@@ -225,3 +238,7 @@ The presented graphs provide a comprehensive evaluation of matrix multiplication
 This set of experiments highlights the importance of **combining multiple optimization strategies** for high-performance matrix multiplication. While individual techniques (multi-threading, SIMD, and cache optimizations) provide noticeable improvements, their synergy is essential for achieving **optimal performance**, particularly for large, dense matrices. Additionally, **sparsity** plays a vital role in reducing computation costs, but **cache management remains critical** to ensure sustained performance across matrix sizes.
 
 ### Future implementations
+GPU Support: Implement matrix multiplication on GPUs for even higher performance.
+Distributed Computing: Explore distributed matrix multiplication using MPI.
+Dynamic Scheduling: Integrate dynamic thread scheduling for better scalability across different workloads.
+
