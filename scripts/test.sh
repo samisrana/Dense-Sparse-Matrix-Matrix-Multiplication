@@ -60,6 +60,9 @@ SPARSITY_LEVELS=(0.01 0.001)
 # "native" (no optimizations), "mt" (multi-threading), "simd", "cache", "all"
 OPTIMIZATIONS=("native" "mt" "simd" "cache" "all")
 
+#Compile code
+make -j$(nproc)
+
 # Run experiments for all combinations
 for matrix_type in "${MATRIX_TYPES[@]}"; do
     for size in "${MATRIX_SIZES[@]}"; do
