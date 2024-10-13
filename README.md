@@ -45,25 +45,25 @@ Matrix multiplication is a critical operation in many fields such as **machine l
 
 The following dependencies are required to build, run, and analyze the project:
 
-### Build Dependencies
+## Build Dependencies
 - **C++ Compiler:** `g++` with AVX/AVX2 support for SIMD operations.
 - **CMake:** (Optional) To manage the build process.
 
-### Performance Tools
+## Performance Tools
 - **perf:** A Linux performance analysis tool to gather performance metrics such as cache misses, CPU cycles, and thread utilization.
 
-### Python Libraries
+## Python Libraries
 For visualization and analysis of results:
 - **matplotlib:** `pip install matplotlib`  
 - **seaborn:** `pip install seaborn`
 - **pandas** `pip install pandas`
-### Operating System
+## Operating System
 - **Linux:** Recommended for multi-threading and performance measurement compatibility with `perf`.
 
 Make sure all dependencies are properly installed before proceeding with the experiments.
-## Code Structure
+### Code Structure
 
-### Key Components
+## Key Components
 
 1. **Makefile**  
    - Automates the **build process**, compiling all necessary source files into object files and the final executable.
@@ -109,6 +109,7 @@ to run the full set of experiments, use the following command:
 9. **test.sh**  
    - **Bash script** to automate the matrix multiplication experiments. It runs the main.cpp executable (print flag off) with various configurations and collects performance data.
 
+### Experiments and Results
 ## How to Run the Experiments
 
 to run the full set of experiments, use the following command:
@@ -187,7 +188,7 @@ The presented graphs provide a comprehensive evaluation of matrix multiplication
 - Among the individual techniques, **multi-threading** provides a noticeable improvement, but **combining all optimizations** (SIMD, cache, and multi-threading) yields the **best results**, maintaining low execution time across matrix sizes.
 
 ---
-### Final Conclusion and Analysis
+### Final Analysis and Conclusion
 <p align="center">
   <img src="images/image.png" alt="CacheVsMainMemory graph" />
 </p>
