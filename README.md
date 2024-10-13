@@ -98,13 +98,20 @@ Make sure all dependencies are properly installed before proceeding with the exp
 
 8. **multiply.sh**  
    - **Bash script** to run Makefile and run main.cpp with print flag on.
+to run the full set of experiments, use the following command:
+```bash
+./multiply.sh
+```
+<p align="center">
+  <img src="images/image.png" alt="CacheVsMainMemory graph" />
+</p>
 
 9. **test.sh**  
    - **Bash script** to automate the matrix multiplication experiments. It runs the main.cpp executable (print flag off) with various configurations and collects performance data.
 
 ## How to Run the Experiments
 
-To run the full set of experiments, use the following command:
+to run the full set of experiments, use the following command:
 ```bash
 ./scripts/test.sh
 ```
