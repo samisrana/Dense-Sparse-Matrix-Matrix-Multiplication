@@ -192,6 +192,9 @@ The graphs generated from the python script provide a comprehensive evaluation o
   <img src="images/image.png" alt="CacheVsMainMemory graph" />
 </p>
 <p align="center">
+  <img src="images/image_2024_10_13T15_26_26_404Z.png" alt="CacheVsMainMemory graph" />
+</p>
+<p align="center">
   <img src="images/image_2024_10_13T11_45_25_072Z.png" alt="CacheVsMainMemory Graph 1" />
 </p>
 
