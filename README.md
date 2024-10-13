@@ -176,7 +176,7 @@ Dense-sparse matrix multiplication involves multiplying a matrix with mostly non
 - **SIMD**: SIMD provides a moderate performance boost but is limited by the sparse structure of one matrix. SIMD works best for the dense portion of the operation.
 - **Cache Optimization**: Cache optimization reduces cache misses when accessing the sparse matrix’s non-zero elements. This is particularly useful when the sparse matrix is large.
 - **All Optimizations Combined**: The combination of multi-threading, SIMD, and cache optimization delivers significant improvements. This approach maximizes performance by leveraging computational power while efficiently managing memory access patterns.
-# Final Conclusion and Analysis
+## Final Analysis and Conclusions
 
 The presented graphs provide a comprehensive evaluation of matrix multiplication performance under different optimization strategies, matrix sizes, and sparsity levels. Below is a detailed analysis and key takeaways based on the graphs:
 
@@ -188,7 +188,6 @@ The presented graphs provide a comprehensive evaluation of matrix multiplication
 - Among the individual techniques, **multi-threading** provides a noticeable improvement, but **combining all optimizations** (SIMD, cache, and multi-threading) yields the **best results**, maintaining low execution time across matrix sizes.
 
 ---
-### Final Analysis and Conclusions
 <p align="center">
   <img src="images/image.png" alt="CacheVsMainMemory graph" />
 </p>
