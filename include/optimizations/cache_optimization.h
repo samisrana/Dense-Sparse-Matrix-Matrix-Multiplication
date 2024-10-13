@@ -8,7 +8,7 @@ void multiply_block_cache(
     const std::vector<std::vector<int>>& A,
     const std::vector<std::vector<int>>& B,
     std::vector<std::vector<int>>& C,
-    int start_row, int end_row, int block_size);
+    int block_size);
 
 #endif
 

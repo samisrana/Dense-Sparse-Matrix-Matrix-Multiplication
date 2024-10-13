@@ -1,29 +1,28 @@
 #include "optimizations/cache_optimization.h"
-#include <algorithm>
+#include <algorithm>  // For std::min
 
-void multiply_block_cache(
-    const std::vector<std::vector<int>>& A,
-    const std::vector<std::vector<int>>& B,
-    std::vector<std::vector<int>>& C,
-    int start_row, int end_row, int block_size) {
+void multiply_block_cache(const std::vector<std::vector<int>>& A,
+                          const std::vector<std::vector<int>>& B,
+                          std::vector<std::vector<int>>& C,
+                          int block_size) {
+    int rowsA = A.size();
+    int colsA = A[0].size();
+    int colsB = B[0].size();
 
-    int n = B[0].size();
-
-    for (int i = start_row; i < end_row; ++i) {
-        for (int j = 0; j < n; j += block_size) {
-            for (int k = 0; k < n; k += block_size) {
-                // Process smaller blocks within the larger matrix
-                for (int ii = i; ii < std::min(i + block_size, end_row); ++ii) {
-                    for (int jj = j; jj < std::min(j + block_size, n); ++jj) {
+    for (int ii = 0; ii < rowsA; ii += block_size) {
+        for (int jj = 0; jj < colsB; jj += block_size) {
+            for (int kk = 0; kk < colsA; kk += block_size) {
+                // Block multiplication
+                for (int i = ii; i < std::min(ii + block_size, rowsA); ++i) {
+                    for (int j = jj; j < std::min(jj + block_size, colsB); ++j) {
                         int sum = 0;
-                        for (int kk = k; kk < std::min(k + block_size, n); ++kk) {
-                            sum += A[ii][kk] * B[kk][jj];
+                        for (int k = kk; k < std::min(kk + block_size, colsA); ++k) {
+                            sum += A[i][k] * B[k][j];
                         }
-                        C[ii][jj] += sum;
+                        C[i][j] += sum;
                     }
                 }
             }
         }
     }
 }
-
