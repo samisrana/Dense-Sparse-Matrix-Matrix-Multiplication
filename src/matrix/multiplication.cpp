@@ -1,10 +1,10 @@
 #include "matrix/multiplication.h"
 #include "optimizations/simd_optimization.h"
 #include "optimizations/cache_optimization.h"
-#include <stdexcept>  // For std::invalid_argument
-#include <thread>     // For multi-threading
-#include <functional> // For std::function
-#include <algorithm>  // For std::min
+#include <stdexcept>  
+#include <thread>     
+#include <functional> 
+#include <algorithm>  
 
 // Matrix multiplication function with configurable optimizations
 std::vector<std::vector<int>> matrix_multiplication(
