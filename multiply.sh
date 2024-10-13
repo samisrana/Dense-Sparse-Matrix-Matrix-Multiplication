@@ -11,7 +11,7 @@ if [ $? -eq 0 ]; then
 
     # Run the generated executable
     echo "Running the program... xD"
-    ./matrix_mult
+    ./matrix_mult 1
 
     # Check if the program ran successfully
     if [ $? -eq 0 ]; then

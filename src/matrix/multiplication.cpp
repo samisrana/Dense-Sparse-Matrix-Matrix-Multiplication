@@ -33,7 +33,7 @@ std::function<void(int, int)> multiply_func = [&](int start_row, int end_row) {
     if (use_cache_optimization && use_simd) {
         multiply_block_simd(A, B, C, start_row, end_row, 64);
     } else if (use_cache_optimization) {
-        multiply_block_cache(A, B, C, start_row, end_row, 64);
+        multiply_block_cache(A, B, C, 64);
     } else if (use_simd) {
         multiply_block_simd(A, B, C, start_row, end_row, 64);
     } else {
