@@ -103,7 +103,7 @@ to run the full set of experiments, use the following command:
 ./multiply.sh
 ```
 <p align="center">
-  <img src="images/image.png" alt="CacheVsMainMemory graph" />
+  <img src="images/multiply.png" alt="CacheVsMainMemory graph" />
 </p>
 
 9. **test.sh**  
