@@ -61,9 +61,9 @@ For visualization and analysis of results:
 - **Linux:** Recommended for multi-threading and performance measurement compatibility with `perf`.
 
 Make sure all dependencies are properly installed before proceeding with the experiments.
-### Code Structure
+## Code Structure
 
-## Key Components
+### Key Components
 
 1. **Makefile**  
    - Automates the **build process**, compiling all necessary source files into object files and the final executable.
