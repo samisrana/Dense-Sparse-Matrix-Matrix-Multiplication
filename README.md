@@ -188,7 +188,7 @@ The presented graphs provide a comprehensive evaluation of matrix multiplication
 - Among the individual techniques, **multi-threading** provides a noticeable improvement, but **combining all optimizations** (SIMD, cache, and multi-threading) yields the **best results**, maintaining low execution time across matrix sizes.
 
 ---
-### Final Analysis and Conclusion
+### Final Analysis and Conclusions
 <p align="center">
   <img src="images/image.png" alt="CacheVsMainMemory graph" />
 </p>
