@@ -1,6 +1,6 @@
 # Compiler and flags
 CXX = g++
-CXXFLAGS = -Wall -std=c++11 -mavx -mavx2 -mfma -pthread
+CXXFLAGS = -Wall -std=c++11 -mavx -mavx2 -mfma -pthread -fopenmp
 
 # Directories for header files and source files
 INCLUDE_DIRS = -Iinclude
@@ -25,7 +25,7 @@ main.o: main.cpp include/matrix/multiplication.h include/matrix/matrix_gen.h
 multiplication.o: $(SRC_DIR)/multiplication.cpp include/matrix/multiplication.h
 	$(CXX) -c $(SRC_DIR)/multiplication.cpp -o multiplication.o $(CXXFLAGS) $(INCLUDE_DIRS)
 
-# Rule to compile matrix_generator.cpp
+# Rule to compile matrix_gen.cpp
 matrix_gen.o: $(SRC_DIR)/matrix_gen.cpp include/matrix/matrix_gen.h
 	$(CXX) -c $(SRC_DIR)/matrix_gen.cpp -o matrix_gen.o $(CXXFLAGS) $(INCLUDE_DIRS)
 
